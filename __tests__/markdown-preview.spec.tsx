@@ -1,13 +1,17 @@
-import { emptyMarkdownCell } from "@nteract/commutable";
+/**
+ * @jest-environment jsdom
+*/
+import { emptyMarkdownCell, MarkdownCellParams } from "@nteract/commutable";
 import { mount, shallow } from "enzyme";
 import React from "react";
 
 import { MarkdownPreviewer } from "../src/markdown-previewer";
 
 describe("MarkdownPreviewer ", () => {
+  const emptyMarkdownCellProps = emptyMarkdownCell.toJS() as MarkdownCellParams;
   test("can be rendered", () => {
     const cell = shallow(
-      <MarkdownPreviewer {...emptyMarkdownCell.toJS()}>
+      <MarkdownPreviewer {...emptyMarkdownCellProps}>
         <p>test</p>
       </MarkdownPreviewer>
     );
@@ -19,7 +23,7 @@ describe("MarkdownPreviewer ", () => {
 
     const cell = mount(
       <MarkdownPreviewer
-        {...emptyMarkdownCell.toJS()}
+        {...emptyMarkdownCellProps}
         focusEditor={focusEditor}
         editorFocused={false}
         cellFocused
@@ -56,7 +60,7 @@ describe("MarkdownPreviewer ", () => {
     const focusAbove = jest.fn();
 
     const cell = shallow(
-      <MarkdownPreviewer {...emptyMarkdownCell.toJS()} focusAbove={focusAbove}>
+      <MarkdownPreviewer {...emptyMarkdownCellProps} focusAbove={focusAbove}>
         <p>Test</p>
       </MarkdownPreviewer>
     );
@@ -70,7 +74,7 @@ describe("MarkdownPreviewer ", () => {
     const focusBelow = jest.fn();
 
     const cell = shallow(
-      <MarkdownPreviewer {...emptyMarkdownCell.toJS()} focusBelow={focusBelow}>
+      <MarkdownPreviewer {...emptyMarkdownCellProps} focusBelow={focusBelow}>
         <p>Test</p>
       </MarkdownPreviewer>
     );

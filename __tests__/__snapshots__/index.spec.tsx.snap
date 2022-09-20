@@ -11,7 +11,7 @@ dry layer $C_{d}^{prime}$, when some volume $delta_{alpha}$ is removed from
 the wet layer.
 
 $$
-C_{d}^{prime} = \\\\frac{alpha}{}
+C_{d}^{prime} = \\frac{alpha}{}
 $$
 
 The dry layer of the canvas uses a relative height field to allow for unlimited
@@ -21,21 +21,21 @@ height between texels.
 >
   <ReactMarkdown
     astPlugins={
-      Array [
+      [
         [Function],
       ]
     }
     className="markdown-body "
     escapeHtml={true}
-    parserOptions={Object {}}
+    parserOptions={{}}
     plugins={
-      Array [
+      [
         [Function],
       ]
     }
     rawSourcePos={false}
     renderers={
-      Object {
+      {
         "code": [Function],
         "inlineMath": [Function],
         "math": [Function],
@@ -51,7 +51,7 @@ dry layer $C_{d}^{prime}$, when some volume $delta_{alpha}$ is removed from
 the wet layer.
 
 $$
-C_{d}^{prime} = \\\\frac{alpha}{}
+C_{d}^{prime} = \\frac{alpha}{}
 $$
 
 The dry layer of the canvas uses a relative height field to allow for unlimited
@@ -134,15 +134,15 @@ dry layer
           </TextRenderer>
           <inlineMath
             data={
-              Object {
-                "hChildren": Array [
-                  Object {
+              {
+                "hChildren": [
+                  {
                     "type": "text",
                     "value": "C_{d}^{prime}",
                   },
                 ],
                 "hName": "span",
-                "hProperties": Object {
+                "hProperties": {
                   "className": "inlineMath",
                 },
               }
@@ -162,8 +162,8 @@ dry layer
                 noGate={false}
                 onError={[Function]}
                 onLoad={null}
-                options={Object {}}
-                src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.8/MathJax.js?config=TeX-MML-AM_CHTML"
+                options={{}}
+                src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"
               >
                 <MathJaxNode
                   inline={true}
@@ -181,15 +181,15 @@ dry layer
           </TextRenderer>
           <inlineMath
             data={
-              Object {
-                "hChildren": Array [
-                  Object {
+              {
+                "hChildren": [
+                  {
                     "type": "text",
                     "value": "delta_{alpha}",
                   },
                 ],
                 "hName": "span",
-                "hProperties": Object {
+                "hProperties": {
                   "className": "inlineMath",
                 },
               }
@@ -209,8 +209,8 @@ dry layer
                 noGate={false}
                 onError={[Function]}
                 onLoad={null}
-                options={Object {}}
-                src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.8/MathJax.js?config=TeX-MML-AM_CHTML"
+                options={{}}
+                src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"
               >
                 <MathJaxNode
                   inline={true}
@@ -231,21 +231,21 @@ the wet layer.
         </p>
         <math
           data={
-            Object {
-              "hChildren": Array [
-                Object {
+            {
+              "hChildren": [
+                {
                   "type": "text",
-                  "value": "C_{d}^{prime} = \\\\frac{alpha}{}",
+                  "value": "C_{d}^{prime} = \\frac{alpha}{}",
                 },
               ],
               "hName": "div",
-              "hProperties": Object {
+              "hProperties": {
                 "className": "math",
               },
             }
           }
           key="math-9-1-2"
-          value="C_{d}^{prime} = \\\\frac{alpha}{}"
+          value="C_{d}^{prime} = \\frac{alpha}{}"
         >
           <MathJaxNode
             inline={false}
@@ -259,8 +259,8 @@ the wet layer.
               noGate={false}
               onError={[Function]}
               onLoad={null}
-              options={Object {}}
-              src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.8/MathJax.js?config=TeX-MML-AM_CHTML"
+              options={{}}
+              src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"
             >
               <MathJaxNode
                 inline={false}
