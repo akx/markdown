@@ -1,9 +1,10 @@
 import parse from "remark-parse";
 import stringify from "remark-stringify";
-import unified from "unified";
-import u from "unist-builder";
+import math from "remark-math";
+import { unified } from "unified";
+import { u } from "unist-builder";
+import { removePosition } from 'unist-util-remove-position';
 
-import math from "../src/remark-math";
 
 function remark() {
   return unified()
@@ -14,6 +15,7 @@ function remark() {
 function parseAST(targetText: string) {
   const processor = remark().use(math);
   const ast = processor.parse(targetText);
+  removePosition(ast, true);
   return ast;
 }
 

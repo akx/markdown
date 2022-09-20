@@ -1,6 +1,5 @@
+/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
 module.exports = {
-  transform: {
-    "^.+\\.(ts|tsx)$": "ts-jest",
-  },
-  setupFilesAfterEnv: ["./test-setup.js"],
+  preset: 'ts-jest/presets/default-esm',
+  testEnvironment: 'node',
 };

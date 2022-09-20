@@ -8,7 +8,7 @@ import {
 } from "@nteract/presentational-components";
 import React from "react";
 import Markdown from "./markdown-render";
-import { ReactMarkdownProps } from "react-markdown";
+import type { ReactMarkdownOptions } from "react-markdown/lib/react-markdown";
 
 interface Props {
   source: string;
@@ -19,7 +19,7 @@ interface Props {
   cellFocused: boolean;
   editorFocused: boolean;
   children: React.ReactNode;
-  markdownOptions?: ReactMarkdownProps;
+  markdownOptions?: ReactMarkdownOptions;
 }
 
 interface State {
